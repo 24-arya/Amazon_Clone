@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cartstyle.css">
+</head>
+<body>
+    <nav>
+        <a href="./">
+            <img src="./assets/amazon_logo.png" width="100" alt="">
+            <p style="float:right; margin-top: 4px; font-size: 15px;">.in</p>
+        </a>
+
+        <div class="nav-country">
+            <img src="./assets/location_icon.png" height="20">
+
+            <div>
+                <p style="font-size: small; font-weight: normal;">Delivering to Kolkata 700023</p>
+                <h3 style="color: white; font-size: 14px;">Update location</h3>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p style="white-space: nowrap;">All Categories</p>
+                <img src="./assets/dropdown_icon.png" height="12">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Amazon.in">
+            <img src="./assets/search_icon.png" class="nav-search-icon">
+        </div>
+        <div class="nav-language">
+            <img src="data:image/png;base64,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" width="25px" alt="">
+            <p>EN</p>
+            <img src="./assets/dropdown_icon.png" width="8px">
+        </div>
+
+        <div class="nav-text">
+            <p>Hello, sign in</p>
+            <h1>Account & Lists<img src="./assets/dropdown_icon.png"  width="8px" style="margin-left: 4px;"></h1>
+        </div>
+
+        <div class="nav-text">
+            <p>Returns</p>
+            <h1>& Orders</h1>
+        </div>
+
+        <a href="signIn.html" class="mobile-user-icon" style="display: none;">
+            <img src="./assets/user.png" alt="">
+        </a>
+
+        <a href="" class="nav-cart">
+            <img src="./assets/cart_icon.png"  width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+
+    <div class="nav-bottom">
+        <div>
+            <img src="./assets/menu_icon.png" width="25px" alt="">
+            <p>All</p>
+        </div>
+
+        <p>Fresh <img src="./assets/dropdown_icon.png" width="8px"></p>
+        <p>MX Player</p>
+        <p>Sell</p>
+        <p>Best Sellers</p>
+        <p>Today's Deals</p>
+        <p>Mobiles</p>
+        <p>Electronics</p>
+        <p>Home & Kitchen</p>
+        <p>Customer Service</p>
+        <p>Prime <img src="./assets/dropdown_icon.png" width="8px"></p>
+        <p>Amazon Pay</p>
+        <p>New Releases</p>
+        <p>Fashion</p>
+        <p>Car & Motorbike</p>
+        <p>Computers</p>
+    </div>   
+
+    <div class="cart">
+        <div class="cart-left">
+            <h1>Shopping Cart</h1>
+            <hr>
+            <div class="product-cart-list">
+                <img src="./assets/ipad_img.jpg" width="250px">
+                <div>
+                    <div class="product-cart-titleprice">
+                        <p class="about">
+                            Apple iPad (10th Generation): with A14 Bionic chip, 27.69 cm (10.9″) Liquid Retina Display, 64GB, Wi-Fi 6, 12MP front/12MP Back Camera, Touch ID, All-Day Battery Life – Blue
+                        </p>
+                        <div><ul>
+                            <li><p class="deal">20% off</p><span> Limited </span></li>
+                            <li><b>&#8377;31,999.00</b></li>
+                        </ul></div>
+                    </div>
+                    <p class="product-cart-bestseller">
+                        <span>#1 Best Seller</span> in Computer Tablets</p>
+                        <p class="product-cart-stock">In Stock</p>
+                        <p class="product-cart-delivery">Eligible for FREE Shipping</p>
+                        <p class="product-cart-giftoption"> <input type="checkbox"> <label for="gift">This will be a gift.</label><span>Learn more</span></p>
+
+                        <div class="product-cart-specs">
+                            <p><b>Style:</b></p> <p>Wi-Fi</p>
+                            <p><b>Size:</b></p><p>64GB</p>
+                            <p><b>Color:</b></p>  <p>Blue</p>
+                        </div>
+
+                        <div class="cart-list-action">
+                            <select>
+                                <option value="Qty:1">Qty:1</option>
+                                <option value="Qty:2">Qty:2</option>
+                                <option value="Qty:3">Qty:3</option>
+                                <option value="Qty:4">Qty:4</option>
+                                <option value="Qty:5">Qty:5</option>
+                            </select>
+                            <hr>
+                            <p class="action-btn">Delete</p>
+                            <hr>
+                            <p class="action-btn">Save for later</p>
+                            <hr>
+                            <p class="action-btn">See more like this</p>
+                            <hr>
+                            <p class="action-btn">Share</p>
+                        </div>
+                </div>
+            </div>
+            <hr>
+            <div class="product-cart-list">
+                <img src="./assets/product_img.jpg" width="250px">
+                <div>
+                    <div class="product-cart-titleprice">
+                            <p class="about">boAt Rockerz 450 Bluetooth On Ear Headphones with Mic, Upto 15 Hours Playback, 40MM Drivers, Padded Ear Cushions, Integrated Controls and Dual Modes(Luscious Black)</p>
+                        
+                            <div class="off"><ul>
+                                <li><p class="deal">62% off</p><span> Limited </span></li>
+                                <li><b>&#8377;1499.00</b></li>
+                            </ul></div>
+                    </div>
+                    <p class="product-cart-bestseller">
+                        <span>#1 Best Seller</span> in On-Ear Headphones</p>
+                        <p class="product-cart-stock">In Stock</p>
+                        <p class="product-cart-delivery">Eligible for FREE Shipping</p>
+                        <p class="product-cart-giftoption"> <input type="checkbox"> This will be a gift. <span>Learn more</span></p>
+
+                        <div class="product-cart-specs">
+                            <p><b>Color:</b></p>  <p>Luscious Black</p>
+                        </div>
+
+                        <div class="cart-list-action">
+                            <select>
+                                <option value="Qty:1">Qty:1</option>
+                                <option value="Qty:2">Qty:2</option>
+                                <option value="Qty:3">Qty:3</option>
+                                <option value="Qty:4">Qty:4</option>
+                                <option value="Qty:5">Qty:5</option>
+                            </select>
+                            <hr>
+                            <p class="action-btn">Delete</p>
+                            <hr>
+                            <p class="action-btn">Save for later</p>
+                            <hr>
+                            <p class="action-btn">See more like this</p>
+                            <hr>
+                            <p class="action-btn">Share</p>
+                        </div>
+                </div>
+            </div>
+            <hr>
+            <div class="cart-list-subtotal">
+            Subtotal (2 items): <b>&#8377;33,498.00</b>
+            </div>
+        </div>
+
+        <div class="cart-right">
+            <div class="cart-free-delivery">
+                <p>&#x2705</p>
+                <p>Your order qualifies for FREE Shipping. <b>Choose this option at checkout. </b> See details</p>
+            </div>
+            <p class="cart-subtotal">Subtotal (2 items): <b>&#8377;33,498.00</p>
+            <p class="cart-right-gift"><input type="checkbox"> This order conatins a gift </p>
+            <button>Proceed to Buy</button>
+        </div>
+    </div>
+
+
+    <footer class="footer-cart">
+        <img src="./assets/amazon_logo.png" width="100" alt="">
+        <p>&copy 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        <p>Crafted with care, &copy; Arya Saha</p>
+    </footer>
+
+
+</body>
+</html>

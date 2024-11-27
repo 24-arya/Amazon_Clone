@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Amazon Clone.in</title>
+    <link rel="icon" href="https://animationvisarts.com/wp-content/uploads/2020/12/Amazon-Icon-1.jpg" type="image/icon type" width="10px" height="5px">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="">
+            <img src="assets/amazon_logo.png" width="100" alt="">
+            <p style="float:right; margin-top: 4px; font-size: 15px;">.in</p>
+        </a>
+
+        <div class="nav-country">
+            <img src="assets/location_icon.png" height="20">
+
+            <div>
+                <p style="font-size: small; font-weight: normal;">Delivering to Kolkata 700023</p>
+                <h3 style="color: white; font-size: 14px;">Update location</h3>
+            </div>
+        </div>
+
+        <div class="nav-search">
+            <div class="nav-search-category">
+                <p style="white-space: nowrap;">All Categories</p>
+                <img src="assets/dropdown_icon.png" height="12">
+            </div>
+            <input type="text" class="nav-search-input" placeholder="Search Amazon.in">
+            <img src="assets/search_icon.png" class="nav-search-icon">
+        </div>
+        <div class="nav-language">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAulBMVEX/aCAEajj////k7+oAXR4AZzJck3T/ZxAHA40AAIoAAIkAAIYAAH4AAIMGAI0AAIQAAHv6+v1vbrPp6fOJiMB5eLj39/ypqNHw8PhcW6qXlseenctYV6m/vtyxsdXS0edRUKbLyuXf3+3b2+xpaLE1M5uQj8TR0eiEg75IR6QVE5F0c7c9PJ6CgcDs7Pajos64t9oyMJsoJpaLicdYVa4lIpdFQ6JfXa5QT6JkY68eG5U8Op4UEZKysNstZzc2AAAIfElEQVR4nO2bCXOjOBaAs9pj0IFswMYYG4TAxnac+NqNu51O//+/tU/yMT3R1FRt1YzUtfW+qiZcnRJfnp4OxNMTgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiDI/8gvyGeeCPIZdOLyMzhpq3I93bxspuuyakMXhoR3kujxM+OMUQODveetTgKXKayTbBRxJmUURdJgfzL+McqCliqkk92YMfAgKaOSghJq9+AEY+NdwHIFdDKjxkjEZbOfiypv80rMZ43kJloYLcMVLJiT7IVLExF8khck6QjRhHQJKfIJN9Ej+bdgFSiUk4rRKKJsvT0mpLJn9tfzJDlu19eLVaCyBXIyGUC1YfPOHlSF2f7bbIqrBzVnUIEG+zCFC+NkFkPtoCnJbP3Y2WdPzWZvcyucTiHZyjhMUgniZB9D1YhEf68w/zGby2PPnO0F3BHFQSIlhJMKKg47khx2W/vQU1N5NvCvmJrDfQubnCwZVJ8QOSWAkwyaFXpvVbbmZzkBB2/gaGIqS7a93feNQsMUoPUJ4OQFHlUm5Lvtwmdn2KwgRgoJwbJZwdHZaki+kwR6tvTFfwH9OymhU8YG8NyvtrlJTYyIguz4jhTCxIpNtsUr+Iqh9eEz7yX07mQHNYe92gedt7DJBtDUyJpkIiO1BBlGF8nmJopmY0gpzHs337uTLYvo/LqbnxRsx1Bx0oa0w5Y0ECKbMZxTp/x6y5xGbOu7iL6dZBxGvqq9HuwkNCs7UUPjnK/EKoemtxYQFpW8ZdZWwaiZ+06zvp2MWMTWpJgpe9TFkE3Gcd6JuhJVLbp8AGEyia/9W7UvyBruH3kuo28npikxnZDqi7WixYgU8Tzh00N8mPJkHu+gu6bNJfXF9E2mppHyXEbPTjSHpGmb12RxNlZqkZKx0JtniJPnjRZjkg5rON9tLratfoGUzLXfQnp2Ag0Jn9z2Nd2AlVI0O36u4k50cXXmu0ZAv0017O5hwiM29ltIz07MbFr+OBoPwcqrmOrhilayoquhnkKkqGb4a1uTmxk4v4X06ySLI/q10LW6HatIbLpyuB+lo/prDdv9sO8aEa3u12tdfKVR7Lfl8esE0gkzQxq9PY5r27iMYjHTkE8OaZMeIJ/ovYjX5kJ3GC9Tk2VL5juh+HUCz0eXtktPdMrEcnTIunHcdOeeU0p5/wJBknZZ1Z9jll6HxMUSum1++/d+nbxCX13cKwbRYynij1LNjiNu32Pw/jhTs/dY0O0jMlbCjAW8ltKvky2NuPrxhFp/lYNpZSfwzXR9dRnIzXr14y0rHlG/3Xu/TqAHxu1OXuyyTOlDPakPqoLO6hW2hqN6Mqkr3Wa7IrddFHBy8VpKv05gSMd36jB7vTTLD8pjAXC5+UJvTuileWbmZMyZPJ7n27JWO/4YNHrCr5MLjQaPg6QoimyldF2nDyeLSa3VKttBjDzuG/x/x8mY/tqNNbSzMxfvM83v+UTv3wR/Kdsf7tlDW+W3I+vXiUkc4t6ktOVRxHKh9byZ3NqdfdNUeiFj8da3t7u0MGnGayn9OtlDbljYxNn27/G3vspIfRqW1XIiGWVysqxK8VaTTPeb+GN0nTFYfIqtvx6/TqBdNX/zrv8yPtgnzs6CqlJ077q/9Pq9E72i4jqn31avl76zscVXf/xr/2T8OilgvLMp9KOLMhO8L5qhbvq0Ptdp3+jhpii5eLz/63RxhvFO/vu/7i/C87j4XUpe3A/aU9wnZCPKvVADLXWsxKwXG5KU8Vt7v6ngkr75LaRnJ2bq8b4KqY97+PtfxKgVlwlXQvHJRbS9gIY3KfltwjEb+Z989OxE8SjikdnrTiNTI17FnjSiPZ0O4nA6tXFDJsKMbpLeTuqTyPwH9Ue/8s/H93zsu7RZNumtEUgoFenEOucpOEl5sRYdqYQdBuc9VCw7anz3XEbfTkxrPCXd5JpUDiYE5hIGv5UWuoIhs5ybYKrt1eJ7Z0dIvhcX+HZiphJ5dWtHtHmP0w0VKXkC+SThJVFDaH6z6Navyysuzbtlv3h/D1hCoByvu93SuGmg4z5d2PeAiyl0/xs4l3+79tfIEcLE+8Ic706SDxnRs3lRkdm3FZ2ZgOYVyeKMVAz2pc2oF4ig5AJ9E/nhfQmx/3UFUB0iahYRXFvYRpup64Ts2I4kZjJab+z5kVlqAEq4/1U5AdafLKApkS052ANlVlZUl9v6k4vJI+m16T2QVkIjtfBfwABOknfzvvPW57D1ZwSxkJxgrzKxk9xmS5R5j/oWYPF9iPVsrVm8RbsVPO7K1ozmtxsNQ75k1VGzdKsNUL4g6x5XZgk1j80SAnt8+e3GnN3G9h6/A+IbYdbH2ok1Ok8y21FpbWqxc/OH1mzzzMzcghLPL89vBFpHraBiRCyqSQKZ9WBzRm82CegpElLDNahensc5d0Ktt8+Otm6cX1hBrtHw3W41KdjL2V47hvoIIdy3Kq/cfGhA2VhldumwsouFMzVmJoYo9/vu70cCfr+jlsZKxPjH/BT3Sqs+Ps0/uHn/RfkySHa9EvTbt8OJ2++6YMM4BxvyeshPdchiBf5GsppT0CKjOxKEsHmoD3duhP5ulBT14hmChBngx/OiDvkpoCW4E0Om6lnf97Nahf1g9MZP4eQn4+nvyGee/oF85ulvyGfQiQs6cUEnLujEBZ24oBMXdOKCTlzQiQs6cUEnLujEBZ24oBMXdOKCTlzQiQs6cUEnLujEBZ24oBMXdOKCTlzQiQs6cUEnLujEBZ24oBMXdOKCTlzQiQs6cUEnLujEBZ24oBMXdOKCTlzQiQs6cUEnLujEBZ24oBMXdOKCTlzQiQs6cUEnLujEBZ24oBMXdOKCTlzQicvTP5HPPP0L+cx/AUKSckc+YXlCAAAAAElFTkSuQmCC" width="25px" alt="">
+            <p>EN</p>
+            <img src="assets/dropdown_icon.png" width="8px">
+        </div>
+
+        <div class="nav-text">
+           <a href="signIn.html"> <p>Hello, sign in</p>
+           <h1>Account & Lists<img src="assets/dropdown_icon.png"  width="8px" style="margin-left: 4px;"></h1></a>
+        </div>
+
+        <div class="nav-text">
+            <p>Returns</p>
+            <h1>& Orders</h1>
+        </div>
+
+        <a href="signIn.html" class="mobile-user-icon" style="display: none;">
+            <img src="assets/user.png" alt="">
+        </a>
+
+        <a href="cart.html" class="nav-cart">
+            <img src="assets/cart_icon.png"  width="35px" alt="">
+            <h4>Cart</h4>
+        </a>
+    </nav>
+
+    <div class="nav-bottom">
+        <div>
+            <img src="assets/menu_icon.png" width="25px" alt="">
+            <p>All</p>
+        </div>
+
+        <p>Fresh <img src="assets/dropdown_icon.png" width="8px"></p>
+        <p>MX Player</p>
+        <p>Sell</p>
+        <p>Best Sellers</p>
+        <p>Today's Deals</p>
+        <p>Mobiles</p>
+        <p>Electronics</p>
+        <p>Home & Kitchen</p>
+        <p>Customer Service</p>
+        <p>Prime <img src="assets/dropdown_icon.png" width="8px"></p>
+        <p>Amazon Pay</p>
+        <p>New Releases</p>
+        <p>Fashion</p>
+        <p>Car & Motorbike</p>
+        <p>Computers</p>
+    </div>
+
+    <div class="header-slider">
+        <a href="#" class="control_prev">
+            <img src="assets/slider-left.png" alt="" width="40px">
+        </a>
+        <a href="#" class="control_next">
+            <img src="assets/slider-right.png" alt="" width="40px">
+        </a>
+        <ul>
+            <img src="assets/header1.jpg" class="header-img "alt="">
+            <img src="assets/header2.jpg" class="header-img "alt="">
+            <img src="assets/header3.jpg" class="header-img "alt="">
+            <img src="assets/header4.jpg" class="header-img "alt="">
+            <img src="assets/header5.jpg" class="header-img "alt="">
+            <img src="assets/header6.jpg" class="header-img "alt="">
+        </ul>
+    </div>
+
+
+
+
+    <div class="box-row header-box">
+        <div class="box-column">
+            <h3>Free international returns</h3>
+            <img src="assets/box1-1.jpg" alt="">
+            <a href="">Hassle-Free Returns</a>
+        </div>
+    
+
+        <div class="box-column">
+            <h3>New Year Gifts</h3>
+            <img src="assets/box1-2.jpg" alt="">
+            <a href="">Festive Gift Picks</a>
+        </div>
+
+        <div class="box-column">
+            <h3>Toys under &#8377; 500</h3>
+            <img src="assets/box1-3.jpg" alt="">
+            <a href="">Affordable Fun Finds</a>
+        </div>
+
+        <div class="box-column">
+            <h3>Electronic Deals</h3>
+            <img src="assets/box1-4.jpg" alt="">
+            <a href="">Smart Tech Deals</a>
+        </div>
+    </div>
+
+    <div class="box-row">
+        <div class="box-column">
+            <h3>Grooming Essentials</h3>
+            <img src="assets/box2-1.jpg" alt="">
+            <a href="">Starting &#8377;249</a>
+        </div>
+    
+
+        <div class="box-column">
+            <h3>Latest Mobiles</h3>
+            <img src="assets/box2-2.jpg" alt="">
+            <a href="">Top Mobile Trends</a>
+        </div>
+
+        <div class="box-column">
+            <h3>Food For Pets</h3>
+            <img src="assets/box2-3.jpg" alt="">
+            <a href="">Treats for Paws</a>
+        </div>
+
+        <div class="box-column">
+            <h3>Fashion Mart</h3>
+            <img src="assets/box2-4.jpg" alt="">
+            <a href="">Style Meets Savings</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="products-slider">
+        <h2>Best Sellers in  Sports & Outdoors</h2>
+        <div class="products">
+            <a href="product.html">
+                <img src="assets/product_img.jpg" alt="">
+            </a>
+            <img src="assets/product1-1.jpg" alt="">
+            <img src="assets/product1-2.jpg" alt="">
+            <img src="assets/product1-3.jpg" alt="">
+            <img src="assets/product1-4.jpg" alt="">
+            <img src="assets/product1-5.jpg" alt="">
+            <img src="assets/product1-6.jpg" alt="">
+            <img src="assets/product1-7.jpg" alt="">
+            <img src="assets/product1-8.jpg" alt="">
+            <img src="assets/product1-9.jpg" alt="">
+            <img src="assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div class="box-row">
+        <div class="box-column">
+            <h3>Stationery Items</h3>
+            <img src="assets/box3-1.jpg" alt="">
+            <a href="">Write and Create magic</a>
+        </div>
+    
+        <div class="box-column">
+            <h3>Laptops</h3>
+            <img src="assets/box3-2.jpg" alt="">
+            <a href="">Power Your Work</a>
+        </div>
+
+        <div class="box-column">
+            <h3>Office chairs</h3>
+            <img src="assets/box3-3.jpg" alt="">
+            <a href="">Sit in Comfort</a>
+        </div>
+
+        <div class="box-column">
+            <h3>Gaming Displays</h3>
+            <img src="assets/box3-4.jpg" alt="">
+            <a href="">Play with Precision</a>
+        </div>
+    </div>
+
+
+
+
+    <div class="product-slider-with-price">
+        <h2>Deals Under &#8377;2499</h2>
+        <div class="products">
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-1.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>749.25 </span>M.R.P: <s>&#8377;999</s></p>
+                <h4>Perfect Pick Awaits!</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-2.jpg" alt="">
+                <div class="product-offer">
+                    <p>62% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>1499.25 </span>M.R.P: <s>&#8377;2499</s></p>
+                <h4>See More</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-3.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>1499.25 </span>M.R.P: <s>&#8377;1999</s></p>
+                <h4>Explore Now</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-4.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>524.25 </span>M.R.P: <s>&#8377;699</s></p>
+                <h4>Shop Now</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-5.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>1499.25 </span>M.R.P: <s>&#8377;1999</s></p>
+                <h4>See More</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-6.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>1199.25 </span>M.R.P: <s>&#8377;1699</s></p>
+                <h4>Perfect Pick Awaits!</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-7.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>1499.25 </span> M.R.P: <s>&#8377;1999</s></p>
+                <h4>Explore Now</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-8.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>224.25 </span> M.R.P: <s>&#8377;299</s></p>
+                <h4>Shop Now</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-9.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>1499.25 </span> M.R.P: <s>&#8377;1999</s></p>
+                <h4>Perfect Pick Awaits!</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-10.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>111.75 </span> M.R.P: <s>&#8377;149</s></p>
+                <h4>See More</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-11.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>599.25 </span> M.R.P: <s>&#8377;799</s></p>
+                <h4>Perfect Pick Awaits!</h4>
+            </div></div>
+
+            <div class="product-card">
+                <div class="product-img-container">
+                    <img src="assets/product2-12.jpg" alt="">
+                <div class="product-offer">
+                    <p>25% off</p>
+                    <span>Deal</span>
+                </div>
+                <p class="product-price">&#8377;<span>899.25 </span> M.R.P: <s>&#8377;1199</s></p>
+                <h4>See More</h4>
+            </div></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="products-slider">
+        <h2>Best Sellers in  Sports & Outdoors</h2>
+        <div class="products">
+            <img src="assets/product1-1.jpg" alt="">
+            <img src="assets/product1-2.jpg" alt="">
+            <img src="assets/product1-3.jpg" alt="">
+            <img src="assets/product1-4.jpg" alt="">
+            <img src="assets/product1-5.jpg" alt="">
+            <img src="assets/product1-6.jpg" alt="">
+            <img src="assets/product1-7.jpg" alt="">
+            <img src="assets/product1-8.jpg" alt="">
+            <img src="assets/product1-9.jpg" alt="">
+            <img src="assets/product1-10.jpg" alt="">
+        </div>
+    </div>
+
+
+
+
+    <div class="box-row">
+        <div class="box-column">
+            <h3>Grooming Essentials</h3>
+            <img src="assets/box2-1.jpg" alt="">
+            <a href="">Starting &#8377;249</a>
+        </div>
+    
+
+        <div class="box-column">
+            <h3>Latest Mobiles</h3>
+            <img src="assets/box2-2.jpg" alt="">
+            <a href="">Top Mobile Trends</a>
+        </div>
+
+        <div class="box-column">
+            <h3>Food For Pets</h3>
+            <img src="assets/box2-3.jpg" alt="">
+            <a href="">Treats for Paws</a>
+        </div>
+
+        <div class="box-column">
+            <h3>Fashion Mart</h3>
+            <img src="assets/box2-4.jpg" alt="">
+            <a href="">Style Meets Savings</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <img src="assets/amazon_logo.png" width="100" alt="">
+        <p>&copy 1996-2024, Amazon.com, Inc. or its affiliates</p>
+        <p>Crafted with care, &copy; Arya Saha</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
